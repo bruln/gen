@@ -1,3 +1,23 @@
+<div class="filter">
+
+    <div class="dropdown">
+        <h3 nz-dropdown [nzDropdownMenu]="menu">
+            Sort by <span nz-icon nzType="down"></span>
+        </h3>
+        <nz-dropdown-menu #menu="nzDropdownMenu">
+            <ul nz-menu>
+                <li nz-menu-item (click)="log('1st menu item')">Rating</li>
+                <li nz-menu-item (click)="log('2nd menu item')">Price Ascending</li>
+                <li nz-menu-item (click)="log('3rd menu item')">Price Descending</li>
+                <li nz-menu-item (click)="log('3rd menu item')">Name</li>
+
+            </ul>
+        </nz-dropdown-menu>
+        <h3>
+            Rating
+        </h3>
+    </div>
+</div>
 <div class="container">
     <nz-card *ngFor="let item of data">
         <app-item-card [item]="item"></app-item-card>

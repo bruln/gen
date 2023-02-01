@@ -12,4 +12,8 @@ export class ShopComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  log(txt: string){
+    console.log(txt)
+  }
+
 }
