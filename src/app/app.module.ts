@@ -10,12 +10,14 @@ import pt from '@angular/common/locales/pt';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './components/header/header.component';
 
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzCardModule } from 'ng-zorro-antd/card';
-import { ItemCardComponent } from './item-card/item-card.component';
+import { ItemCardComponent } from './components/item-card/item-card.component';
+import { ShopComponent } from './components/shop/shop.component';
+import { CartComponent } from './components/cart/cart.component';
 
 registerLocaleData(pt);
 
@@ -23,7 +25,9 @@ registerLocaleData(pt);
   declarations: [
     AppComponent,
     HeaderComponent,
-    ItemCardComponent
+    ItemCardComponent,
+    ShopComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

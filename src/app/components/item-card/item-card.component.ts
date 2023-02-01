@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Product } from '../shared/models/product.model';
-import { Router } from '@angular/router';
+import { Product } from '../../shared/models/product.model';
 
 
 @Component({
@@ -12,14 +11,10 @@ export class ItemCardComponent implements OnInit {
   @Input()
   item!: Product;
   mainImage!: string; 
-  constructor(private router: Router) { }
+  constructor() { }
   ngOnInit(): void {
     this.mainImage = this.item.colorOptions[0].image
     console.log(this.item);
     
-  }
-
-  goToItem(){
-    this.router.navigateByUrl('../aaa')
   }
 }

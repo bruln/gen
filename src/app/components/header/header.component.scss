@@ -1,0 +1,20 @@
+* {
+    color:darkgrey
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+} 
+
+.links {
+    width: 120px;
+    justify-content: space-between;
+}
+
+.active h2 {
+    color: white;
+}
+

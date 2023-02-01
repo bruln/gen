@@ -33,7 +33,7 @@ export const SHOES: Product[] = [
     {
         id: 1,
         name: 'Invincible 3',
-        description: 'With maximum cushioning to support every mile, the Invincible 3 gives you our highest level of comfort underfoot to help you stay on your feet.',
+        description: 'The Invincible 3 gives you our highest level of comfort underfoot to help you stay on your feet.',
         price: 449.99,
         rating: 4.0,
         gender: GendersEnum.Unisex,

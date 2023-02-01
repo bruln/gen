@@ -3,11 +3,6 @@
     <app-header></app-header>
   </nz-header>
   <nz-content>
-    <div class="container">
-      <nz-card *ngFor="let item of data">
-        <app-item-card [item]="item"></app-item-card>
-      </nz-card>
-    </div>
     <router-outlet></router-outlet>
   </nz-content>
   <nz-footer>
