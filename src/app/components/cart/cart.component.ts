@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CartService } from 'src/app/shared/services/cart/cart.service';
 import { Subject, takeUntil } from 'rxjs';
 import { Cart } from 'src/app/shared/models/cart.model';
+import { CartItem } from 'src/app/shared/models/cart-item.model';
 
 @Component({
   selector: 'app-cart',
@@ -15,11 +16,17 @@ export class CartComponent implements OnInit, OnDestroy {
   constructor(private cartService: CartService) { }
 
   ngOnInit(): void {
-  
     this.cartService.getCart().pipe(takeUntil(this.unsubscribe$)).subscribe((cart) => {
       this.cart = cart;
-      console.log(this.cart);
     })
+  }
+
+  addToCart(item: CartItem){
+    this.cartService.addToCart(item, true)
+  }
+
+  removeFromCart(item: CartItem){
+    this.cartService.removeFromCart(item)
   }
 
   ngOnDestroy(): void {

@@ -3,8 +3,9 @@
         <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>
             <h2>Home</h2>
         </a>
-        <a routerLink="cart" routerLinkActive="active">
-            <h2>Cart</h2>
-        </a>
     </div>
+    <a routerLink="cart" routerLinkActive="active">
+        <h2>Cart</h2>
+    </a>
+    <nz-badge [nzCount]="cartSize"></nz-badge>
 </div>

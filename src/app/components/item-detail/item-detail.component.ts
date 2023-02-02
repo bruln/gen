@@ -20,7 +20,10 @@ export class ItemDetailComponent implements OnInit, OnDestroy {
   selectedQuantity: number = 1;
   unsubscribe$: Subject<boolean> = new Subject<boolean>()
   
-  constructor(private activatedRoute: ActivatedRoute, private cartService: CartService, private itemService: ItemService) { }
+  constructor(
+    private activatedRoute: ActivatedRoute, 
+    private cartService: CartService, 
+    private itemService: ItemService) { }
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.pipe(takeUntil(this.unsubscribe$)).subscribe(params => {
@@ -30,12 +33,10 @@ export class ItemDetailComponent implements OnInit, OnDestroy {
     this.itemService.getItem(this.itemId).pipe(takeUntil(this.unsubscribe$)).subscribe(item => {
       this.item = item[0];
       this.selectedColor = this.item.colorOptions[0]
-      console.log(this.item); 
     })
   }
   
   setColor(color){
-    console.log(color);
     this.selectedColor = color;
   }
 
@@ -46,6 +47,7 @@ export class ItemDetailComponent implements OnInit, OnDestroy {
       quantity: this.selectedQuantity, 
       size: this.selectedSize, 
       price: this.item.price})
+    
   }
 
 

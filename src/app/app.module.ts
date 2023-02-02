@@ -20,6 +20,7 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzRadioModule } from 'ng-zorro-antd/radio';
 import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
 import { NzListModule } from 'ng-zorro-antd/list';
+import { NzBadgeModule } from 'ng-zorro-antd/badge';
 import { ItemCardComponent } from './components/item-card/item-card.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { CartComponent } from './components/cart/cart.component';
@@ -47,7 +48,8 @@ registerLocaleData(pt);
     NzButtonModule,
     NzRadioModule,
     NzInputNumberModule,
-    NzListModule
+    NzListModule,
+    NzBadgeModule
   ],
   providers: [{ provide: NZ_I18N, useValue: pt_BR }],
   bootstrap: [AppComponent]

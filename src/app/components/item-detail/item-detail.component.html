@@ -22,7 +22,7 @@
                 </nz-radio-group>
             </div>
             <div class="add-cart">
-                <nz-input-number [(ngModel)]="selectedQuantity" [nzMin]="1" [nzMax]="10" [nzStep]="1"></nz-input-number>
+                <nz-input-number [(ngModel)]="selectedQuantity" [nzMin]="1" [nzStep]="1"></nz-input-number>
                 <button nz-button nzType="primary" nzSize="default" nzType="default" disabled="{{!selectedSize}}"
                     (click)="addToCart()">
                     Add to Cart
