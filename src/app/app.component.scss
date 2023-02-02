@@ -11,6 +11,12 @@ nz-content {
 
 }
 
+nz-footer{
+    display: flex;
+    justify-content: center;
+    height: 8vh;
+}
+
 nz-layout {
     background: linear-gradient(180deg, rgba(196, 190, 193, 1) 0%, rgb(113, 130, 156) 100%);
     min-height: 100vh;
