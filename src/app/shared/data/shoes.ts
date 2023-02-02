@@ -275,7 +275,7 @@ export const SHOES: Product[] = [
     {
         id: 4,
         name: 'Pegasus 39',
-        description: "Whether you're preparing for a quick jog, an extended run or one of the most popular relay marathons, running is your daily ritual—and you need shoes that are just as dedicated as you.",
+        description: "Running is your daily ritual—and you need shoes that are just as dedicated as you.",
         price: 159.99,
         rating: 3.5,
         gender: GendersEnum.Male,
