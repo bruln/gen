@@ -6,7 +6,7 @@ export const SHOES: Product[] = [
     {
         id: 0,
         name: 'Tempo',
-        description: 'While these speedsters could easily pass the test on race day, they double as your go-to shoe for your training routine.',
+        description: 'These speedsters could easily pass the test on race day and double as your go-to training shoe.',
         price: 249.99,
         rating: 4.5,
         gender: GendersEnum.Male,
@@ -25,9 +25,47 @@ export const SHOES: Product[] = [
             }
         ],
         sizeOptions: [
-            SizesEnum.S_37,
-            SizesEnum.S_39,
-            SizesEnum.S_40
+            {
+                 size: SizesEnum.S_36,
+                available: false
+            },
+            {
+                size: SizesEnum.S_37,
+                available: true
+            },
+            {
+                size: SizesEnum.S_38,
+                available: false
+            },
+            {
+                size: SizesEnum.S_39,
+                available: true
+            },
+            {
+                size: SizesEnum.S_40,
+                available: true
+            },
+            {
+                size: SizesEnum.S_41,
+                available: false
+            },
+            {
+                size: SizesEnum.S_42,
+                available: true
+            },
+            {
+                size: SizesEnum.S_43,
+                available: true
+            },
+            {
+                size: SizesEnum.S_44,
+                available: true
+            },
+            {
+                size: SizesEnum.S_45,
+                available: true
+            }
+           
         ],
     },
     {
@@ -56,19 +94,52 @@ export const SHOES: Product[] = [
             }
         ],
         sizeOptions: [
-            SizesEnum.S_37,
-            SizesEnum.S_38,
-            SizesEnum.S_39,
-            SizesEnum.S_40,
-            SizesEnum.S_41,
-            SizesEnum.S_42,
-            SizesEnum.S_43
+            {
+                 size: SizesEnum.S_36,
+                available: true
+            },
+            {
+                size: SizesEnum.S_37,
+                available: false
+            },
+            {
+                size: SizesEnum.S_38,
+                available: false
+            },
+            {
+                size: SizesEnum.S_39,
+                available: true
+            },
+            {
+                size: SizesEnum.S_40,
+                available: false
+            },
+            {
+                size: SizesEnum.S_41,
+                available: true
+            },
+            {
+                size: SizesEnum.S_42,
+                available: true
+            },
+            {
+                size: SizesEnum.S_43,
+                available: false
+            },
+            {
+                size: SizesEnum.S_44,
+                available: false
+            },
+            {
+                size: SizesEnum.S_45,
+                available: false
+            }
         ],
     },
     {
         id: 2,
         name: 'Streakfly',
-        description: 'Our lightest racing shoe, the Nike Streakfly is all about the speed you need to take on the competition in a mile, 5K or 10K race.',
+        description: 'The Nike Streakfly is all about the speed you need to take on the competition in a mile, 5K or 10K race.',
         price: 329.99,
         rating: 5.0,
         gender: GendersEnum.Female,
@@ -91,12 +162,46 @@ export const SHOES: Product[] = [
             }
         ],
         sizeOptions: [
-            SizesEnum.S_37,
-            SizesEnum.S_38,
-            SizesEnum.S_39,
-            SizesEnum.S_41,
-            SizesEnum.S_42,
-            SizesEnum.S_43
+            {
+                 size: SizesEnum.S_36,
+                available: false
+            },
+            {
+                size: SizesEnum.S_37,
+                available: true
+            },
+            {
+                size: SizesEnum.S_38,
+                available: false
+            },
+            {
+                size: SizesEnum.S_39,
+                available: true
+            },
+            {
+                size: SizesEnum.S_40,
+                available: false
+            },
+            {
+                size: SizesEnum.S_41,
+                available: false
+            },
+            {
+                size: SizesEnum.S_42,
+                available: true
+            },
+            {
+                size: SizesEnum.S_43,
+                available: false
+            },
+            {
+                size: SizesEnum.S_44,
+                available: true
+            },
+            {
+                size: SizesEnum.S_45,
+                available: true
+            }
         ],
     },
     {
@@ -125,7 +230,46 @@ export const SHOES: Product[] = [
             }
         ],
         sizeOptions: [
-            SizesEnum.S_37
+            {
+                 size: SizesEnum.S_36,
+                available: false
+            },
+            {
+                size: SizesEnum.S_37,
+                available: true
+            },
+            {
+                size: SizesEnum.S_38,
+                available: false
+            },
+            {
+                size: SizesEnum.S_39,
+                available: true
+            },
+            {
+                size: SizesEnum.S_40,
+                available: true
+            },
+            {
+                size: SizesEnum.S_41,
+                available: false
+            },
+            {
+                size: SizesEnum.S_42,
+                available: true
+            },
+            {
+                size: SizesEnum.S_43,
+                available: true
+            },
+            {
+                size: SizesEnum.S_44,
+                available: true
+            },
+            {
+                size: SizesEnum.S_45,
+                available: true
+            }
         ],
     },
     {
@@ -142,13 +286,46 @@ export const SHOES: Product[] = [
             }
         ],
         sizeOptions: [
-            SizesEnum.S_36,
-            SizesEnum.S_37,
-            SizesEnum.S_38,
-            SizesEnum.S_39,
-            SizesEnum.S_41,
-            SizesEnum.S_42,
-            SizesEnum.S_43
+           {
+                 size: SizesEnum.S_36,
+                available: false
+            },
+            {
+                size: SizesEnum.S_37,
+                available: true
+            },
+            {
+                size: SizesEnum.S_38,
+                available: false
+            },
+            {
+                size: SizesEnum.S_39,
+                available: false
+            },
+            {
+                size: SizesEnum.S_40,
+                available: true
+            },
+            {
+                size: SizesEnum.S_41,
+                available: false
+            },
+            {
+                size: SizesEnum.S_42,
+                available: false
+            },
+            {
+                size: SizesEnum.S_43,
+                available: false
+            },
+            {
+                size: SizesEnum.S_44,
+                available: true
+            },
+            {
+                size: SizesEnum.S_45,
+                available: true
+            }
         ],
     },
     {
@@ -169,11 +346,46 @@ export const SHOES: Product[] = [
             },
         ],
         sizeOptions: [
-            SizesEnum.S_36,
-            SizesEnum.S_37,
-            SizesEnum.S_38,
-            SizesEnum.S_42,
-            SizesEnum.S_43
+           {
+                 size: SizesEnum.S_36,
+                available: false
+            },
+            {
+                size: SizesEnum.S_37,
+                available: false
+            },
+            {
+                size: SizesEnum.S_38,
+                available: false
+            },
+            {
+                size: SizesEnum.S_39,
+                available: true
+            },
+            {
+                size: SizesEnum.S_40,
+                available: false
+            },
+            {
+                size: SizesEnum.S_41,
+                available: false
+            },
+            {
+                size: SizesEnum.S_42,
+                available: true
+            },
+            {
+                size: SizesEnum.S_43,
+                available: false
+            },
+            {
+                size: SizesEnum.S_44,
+                available: false
+            },
+            {
+                size: SizesEnum.S_45,
+                available: true
+            }
         ],
     },
     {
@@ -198,9 +410,46 @@ export const SHOES: Product[] = [
             }
         ],
         sizeOptions: [
-            SizesEnum.S_38,
-            SizesEnum.S_42,
-            SizesEnum.S_43
+            {
+                 size: SizesEnum.S_36,
+                available: false
+            },
+            {
+                size: SizesEnum.S_37,
+                available: true
+            },
+            {
+                size: SizesEnum.S_38,
+                available: false
+            },
+            {
+                size: SizesEnum.S_39,
+                available: false
+            },
+            {
+                size: SizesEnum.S_40,
+                available: false
+            },
+            {
+                size: SizesEnum.S_41,
+                available: false
+            },
+            {
+                size: SizesEnum.S_42,
+                available: false
+            },
+            {
+                size: SizesEnum.S_43,
+                available: true
+            },
+            {
+                size: SizesEnum.S_44,
+                available: true
+            },
+            {
+                size: SizesEnum.S_45,
+                available: true
+            }
         ],
     }
 ]

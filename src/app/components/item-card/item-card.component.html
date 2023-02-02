@@ -2,8 +2,13 @@
     <img src={{mainImage}} alt={{item.name}}>
     <h3>{{item.name}}</h3>
 </a>
-<h5>{{item.price | currency}}</h5>
+<h5>{{ item.price | currency }}</h5>
 <div class="details">
     <p>{{item.description}}</p>
+
+
     <h4 *ngIf="item.colorOptions.length > 1">{{item.colorOptions.length}} colors</h4>
+    <h4>Rating: {{item.rating}}</h4>
+
+
 </div>

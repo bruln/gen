@@ -1,6 +1,7 @@
 import { SizesEnum } from "../enums/sizes.enum";
 import { GendersEnum } from "../enums/genders.enum";
 import { ColorOption } from "./product-image.model";
+import { Size } from "./size.model";
 
 export interface Product {
     id: number
@@ -10,5 +11,5 @@ export interface Product {
     rating: number;
     gender: GendersEnum;
     colorOptions: ColorOption[];
-    sizeOptions: SizesEnum[];
+    sizeOptions: Size[];
 }
