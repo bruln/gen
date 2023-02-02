@@ -1,40 +1,33 @@
-<div class="details">
-    <pre>
-
-    </pre>
-    <div>
-        <img src="{{selectedColor.image}}" alt="{{item.name}}">
-    </div>
-    <div>
-        <h1>{{item.name}}</h1>
-        <h1>{{item.price | currency }}</h1>
-        <p>{{item.description}}</p>
-        <div class="colorways">
-            <nz-radio-group>
-                <label *ngFor="let color of item.colorOptions" nz-radio-button nzGhost nzValue="{{color}}"
-                    (click)="setColor(color)">
-                    <img src="{{color.image}}" alt="{{color.color}}">
-                </label>
-            </nz-radio-group>
+<div class="container">
+    <div class="details">
+        <div>
+            <img src="{{selectedColor.image}}" alt="{{item.name}}">
         </div>
-        <br>
-        <br>
-
-        <pre>
-        {{ selectedColor.color }}, {{selectedSize}}
-      </pre>
-        <div class="sizes">
-            <nz-radio-group [(ngModel)]="selectedSize" nzButtonStyle="solid" ngDefaultControl>
-                <label *ngFor="let size of item.sizeOptions" nz-radio-button nzValue={{size.size}}
-                    nzDisabled="{{!size.available}}">{{size.size}}</label>
-            </nz-radio-group>
-        </div>
-        <div class="add-cart">
-            <nz-input-number [(ngModel)]="selectedQuantity" [nzMin]="1" [nzMax]="10" [nzStep]="1"></nz-input-number>
-            <button nz-button nzType="primary" nzSize="large" nzShape="round" nzType="default"
-                disabled="{{!selectedSize}}" (click)="addToCart()">
-                Add to Cart
-            </button>
+        <div class="side-info">
+            <h1>{{item.name}}</h1>
+            <h3>{{item.price | currency }}</h3>
+            <p>{{item.description}}</p>
+            <div class="colorways">
+                <nz-radio-group>
+                    <label *ngFor="let color of item.colorOptions" nz-radio-button nzGhost nzValue="{{color}}"
+                        (click)="setColor(color)">
+                        <img src="{{color.image}}" alt="{{color.color}}">
+                    </label>
+                </nz-radio-group>
+            </div>
+            <div class="sizes">
+                <nz-radio-group [(ngModel)]="selectedSize" nzButtonStyle="solid" ngDefaultControl>
+                    <label *ngFor="let size of item.sizeOptions" nz-radio-button nzValue={{size.size}}
+                        nzDisabled="{{!size.available}}">{{size.size}}</label>
+                </nz-radio-group>
+            </div>
+            <div class="add-cart">
+                <nz-input-number [(ngModel)]="selectedQuantity" [nzMin]="1" [nzMax]="10" [nzStep]="1"></nz-input-number>
+                <button nz-button nzType="primary" nzSize="default" nzType="default" disabled="{{!selectedSize}}"
+                    (click)="addToCart()">
+                    Add to Cart
+                </button>
+            </div>
         </div>
     </div>
 </div>

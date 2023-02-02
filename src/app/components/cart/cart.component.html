@@ -1,5 +1,23 @@
-<p>cart works!</p>
-<pre>
+<!-- <pre>
 cart:
 {{cart | json }}
-</pre>
+</pre> -->
+<div *ngIf="cart.items.length else emptyCart">
+    <div class="header">
+        <h1>Your Cart</h1>
+    </div>
+    <nz-list>
+        <nz-list-item *ngFor="let item of cart.items">
+            <img src="{{item.color.image}}" alt="">
+            <h1>{{item.name}}</h1>
+            <h4>{{item.price}}</h4>
+            <p>{{item.quantity}}</p>
+        </nz-list-item>
+    </nz-list>
+</div>
+
+<ng-template #emptyCart>
+    <div class="empty-cart">
+        <H1>Your cart is empty</H1>
+    </div>
+</ng-template>

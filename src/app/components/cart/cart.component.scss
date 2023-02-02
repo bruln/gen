@@ -1,0 +1,27 @@
+img {
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+nz-list-item{
+    padding: 4em;
+    background-color: rgb(246, 246, 246);
+    border-radius: 5px;
+    margin: 1em;
+}
+
+
+.empty-cart {
+    padding: 40vh;
+    height: 85vh;
+    text-align: center;
+    vertical-align: center;
+
+    h1{
+        font-size: 30pt;
+        opacity: 60%;
+    }
+}

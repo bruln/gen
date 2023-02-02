@@ -5,10 +5,12 @@
 <h5>{{ item.price | currency }}</h5>
 <div class="details">
     <p>{{item.description}}</p>
-
-
-    <h4 *ngIf="item.colorOptions.length > 1">{{item.colorOptions.length}} colors</h4>
-    <h4>Rating: {{item.rating}}</h4>
-
-
+    <div class="card-footer">
+        <h4 *ngIf="item.colorOptions.length > 1 else oneColor">{{item.colorOptions.length}} colors</h4>
+        <h4>Rating: {{item.rating}}</h4>
+    </div>
 </div>
+
+<ng-template #oneColor>
+    <h4>1 Color</h4>
+</ng-template>
