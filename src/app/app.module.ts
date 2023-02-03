@@ -13,9 +13,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 import { SharedModule } from './shared/shared.module';
-
-
-import { ItemCardComponent } from './components/item-card/item-card.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { CartComponent } from './components/cart/cart.component';
 
@@ -25,7 +22,6 @@ registerLocaleData(pt);
   declarations: [
     AppComponent,
     HeaderComponent,
-    ItemCardComponent,
     ShopComponent,
     CartComponent,
     ItemDetailComponent,
@@ -36,9 +32,9 @@ registerLocaleData(pt);
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: pt_BR }],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
