@@ -52,18 +52,14 @@ export class CartService {
       item.color.color == itemToRemove.color.color && 
       item.size == itemToRemove.size )
 
-    if (index == 0 && cartItems.length == 1 && cartItems[0].quantity == 1) {
-      cartItems = []
-    } else if (cartItems[index].quantity > 1){
-      cartItems[index].quantity -= 1;  
-    } else {
-      cartItems = cartItems.splice(index,1) 
-    }
-    if (cartItems=[]){
-      cartValue = 0
-    }else{
-      cartValue -= (itemToRemove.price);
-    }
+      console.log('index', cartItems[index]);
+
+      if (cartItems[index].quantity == 1){
+        cartItems.splice(index,1)
+      }else{
+        cartItems[index].quantity -= 1
+      }
+      cartValue -= itemToRemove.price
     this.subject.next({items:cartItems, totalAmount:cartValue});
   }
 }
