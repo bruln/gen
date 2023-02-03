@@ -30,6 +30,9 @@ nz-list-item{
 }
 
 .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 0em 1em;
     margin-top: 14px
 }
