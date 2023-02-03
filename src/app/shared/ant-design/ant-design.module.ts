@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzCardModule } from 'ng-zorro-antd/card';
@@ -10,7 +9,7 @@ import { NzListModule } from 'ng-zorro-antd/list';
 import { NzBadgeModule } from 'ng-zorro-antd/badge';
 
 @NgModule({
-  exports:[
+  exports: [
     NzDropDownModule,
     NzLayoutModule,
     NzCardModule,
@@ -19,6 +18,6 @@ import { NzBadgeModule } from 'ng-zorro-antd/badge';
     NzInputNumberModule,
     NzListModule,
     NzBadgeModule,
-  ]
+  ],
 })
-export class AntDesignModule { }
+export class AntDesignModule {}
