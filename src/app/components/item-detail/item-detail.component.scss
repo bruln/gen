@@ -1,5 +1,5 @@
 .details {
-    margin: 3em;
+    margin: 0em 3em 3em 3em ;
     display: flex;
     width: fit-content;
     flex-direction: column;
@@ -9,10 +9,23 @@
     border-radius: 5px;
 }
 
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0em 1em;
+    margin-top: 14px;
+    width: 100%;
+    margin-left: 4em;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: fit-content;
+    align-self: center;
 }
 
 img{
