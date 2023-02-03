@@ -24,7 +24,7 @@ export class ShopComponent implements OnInit {
       });
   }
 
-  sort(option: string): void {
+  public sort(option: string): void {
     switch (option) {
       case 'Price Ascending':
         this.data.sort((a, b) => a.price - b.price);

@@ -24,11 +24,11 @@ export class CartComponent implements OnInit, OnDestroy {
       });
   }
 
-  addToCart(item: CartItem): void {
+  public addToCart(item: CartItem): void {
     this.stateService.addToCart(item, true);
   }
 
-  removeFromCart(item: CartItem): void {
+  public removeFromCart(item: CartItem): void {
     this.stateService.removeFromCart(item);
   }
 

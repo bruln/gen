@@ -40,11 +40,11 @@ export class ItemDetailComponent implements OnInit, OnDestroy {
       });
   }
 
-  setColor(color: ColorOption): void {
+  public setColor(color: ColorOption): void {
     this.selectedColor = color;
   }
 
-  addToCart(): void {
+  public addToCart(): void {
     this.stateService.addToCart({
       name: this.item.name,
       color: this.selectedColor,
